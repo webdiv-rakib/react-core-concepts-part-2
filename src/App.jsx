@@ -3,6 +3,8 @@ import Counter from './Counter'
 import Team from './Team'
 import Users from './Users'
 import Friends from './Friends'
+import Posts from './Posts'
+
 function App() {
   function handleClick() {
     alert('Button Clicked')
@@ -16,7 +18,17 @@ function App() {
   return (
     <>
       <h3>React Core Concepts Part-2</h3>
-      <Friends></Friends>
+      <ol>
+        <li>Components</li>
+        <li>JSX</li>
+        <li>Props</li>
+        <li>Event Handler</li>
+        <li>State</li>
+        <li>Load Data</li>
+      </ol>
+      <hr />
+      <Posts></Posts>
+      {/* <Friends></Friends> */}
       {/* <Users></Users> */}
       {/* <Team></Team> */}
       {/* <Counter></Counter> */}
