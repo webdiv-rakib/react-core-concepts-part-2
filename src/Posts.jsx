@@ -13,6 +13,9 @@ export default function Posts() {
     return (
         <div>
             <h3>Total Post: {posts.length}</h3>
+            {
+                posts.map(post => <Post post={post}></Post>)
+            }
         </div>
     )
 }
