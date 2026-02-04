@@ -1,8 +1,23 @@
 import './App.css'
 function App() {
+  function handleClick() {
+    alert('Button Clicked')
+  }
+  const handleClick2 = () => {
+    alert('Button-2 Clicked')
+  }
+  const addToFive = (num) => {
+    alert(num + 5)
+  }
   return (
     <>
-      <h1>React Core Concepts Part-2</h1>
+      <h3>React Core Concepts Part-2</h3>
+      <button onClick={handleClick}>Click Me</button>
+      <button onClick={handleClick2}>Click Me-2</button>
+      <button onClick={() => { alert('Button-3 Clicked') }}>Click Me-3</button>
+
+      {/* Complicated system */}
+      <button onClick={() => addToFive(3)}>Click Me-4</button>
     </>
   )
 }
